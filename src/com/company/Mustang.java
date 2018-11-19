@@ -1,16 +1,23 @@
 package com.company;
 
 public class Mustang implements Horse{
-    private String name;
-    private int weight;
-    public class getName(String name)
+    private String Name;
+    private int Weight;
+    public Mustang(String Name, int Weight)
     {
-        this.getName=name;
-
+        this.Name = Name;
+        this.Weight = Weight;
     }
-   public String toString(){
-       String output ="";
-       output += this.getName()+","+" weighs:"+this.getWeight();
-       return output;
-   }
+    public String getName() {
+        return Name;
+    }
+    public int getWeight() {
+        return Weight;
+    }
+    public String toString()
+    {
+        String output ="";
+        output += this.getName() + "," + " weights: " + this.getWeight();
+        return output;
+    }
 }
